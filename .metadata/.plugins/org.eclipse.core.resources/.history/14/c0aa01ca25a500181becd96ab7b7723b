@@ -1,0 +1,29 @@
+package com.pojo;
+
+public class LimitOrder extends Order implements OrderInterface {
+
+	@Override
+	public void editOrder(int quantity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void cancelOrder() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void insertIntoQueue() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteIntoQueue() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

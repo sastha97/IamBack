@@ -1,0 +1,6 @@
+package com.demo;
+
+public interface MyInterface2 {
+	boolean add1(Person person1, Person person2);
+	
+}

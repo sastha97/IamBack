@@ -1,0 +1,27 @@
+package com.pojo;
+
+import java.time.LocalTime;
+
+public class Order {
+	User userId;
+	int initialQuantity;
+	String orderId;	
+	enum Status	{Rejected, Waitlisted, Confirmed, Cancelled}
+	enum Type {Buy, Sell}
+	LocalTime timeStamp;
+	public Order() {
+		// TODO Auto-generated constructor stub
+	}
+	public Order(User userId, int initialQuantity, String orderId, LocalTime timeStamp, Status status) {
+		super();
+		this.userId = userId;
+		this.initialQuantity = initialQuantity;
+		this.orderId = orderId;
+		this.timeStamp = timeStamp;
+		status.
+	}
+	
+	
+	
+
+}

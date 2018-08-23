@@ -1,0 +1,11 @@
+
+public class DemoConnection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Class.forName(com.microsoft.jdbc.sqlserver.SQLServerDriver)
+
+	}
+
+}

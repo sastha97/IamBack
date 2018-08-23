@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.pojo.Order.java&apos; to &apos;OrderInterface.java&apos;&#x0D;&#x0A;- Original project: &apos;OrderMatchingSystem&apos;&#x0D;&#x0A;- Original element: &apos;com.pojo.Order.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.pojo.OrderInterface.java&apos;" description="Rename compilation unit &apos;Order.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.pojo{Order.java" name="OrderInterface.java" references="false" stamp="1534842691866" version="1.0"/>
+</session>

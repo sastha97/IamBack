@@ -1,0 +1,23 @@
+package com.pojo;
+
+public interface Order {
+
+	User userId;
+	int initQuantity;
+	int toBeExecuted;
+	String orderId;	
+	enum status	{Rejected, Waitlisted, Confirmed, Cancelled}
+	enum type {Buy, Sell}
+	time timeStamp;
+					
+					
+					
+						//getters and Setters, Constructors(default and Parameterized), toString, equals(Primary key OrderId), 
+					
+	void editOrder(int  quantity);
+	void cancelOrder();					
+	void insertIntoQueue();							
+	void deleteIntoQueue();
+										
+										
+}

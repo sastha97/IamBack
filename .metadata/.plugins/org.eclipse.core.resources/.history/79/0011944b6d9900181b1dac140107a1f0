@@ -1,0 +1,32 @@
+package com.pojo;
+
+public class Calculator {
+	
+	public int sum(int a) {
+		return a;
+	}
+	public int sum(int a, int b) {
+		return sum(a+b);
+		
+	}
+	public int sum(int a, int b, int c) {
+		return sum(sum(a,b),c);
+	}
+	
+	public int multiply(int a) {
+		return a;
+	}
+	public int multiply(int a, int b) {
+		return multiply(a*b);
+		
+	}
+	public int multiply(int a, int b, int c) {
+		return multiply(multiply(a,b),c);
+	}
+	public static void main(String[] args) {
+		System.out.println(sum(1));
+		
+	}
+
+
+}

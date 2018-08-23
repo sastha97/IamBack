@@ -1,0 +1,17 @@
+package com.annotations;
+
+public class TestAnnotation {
+	
+	public static void disp() {
+		// TODO Auto-generated method stub
+		System.out.println("display");
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

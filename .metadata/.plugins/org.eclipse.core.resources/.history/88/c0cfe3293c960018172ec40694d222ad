@@ -1,0 +1,23 @@
+
+public class Employee {
+	private int empId;
+	private double salary;
+	private String empName;
+	private String companyName;
+	public Employee() {
+		this.empId = 10;
+		this.salary = 1000;
+		this.empName = "King";
+		this.companyName = "city ltd";
+	}
+	public Employee(int empId, double salary, String empName, String companyName) {
+		this();
+		this.empId = empId;
+		this.salary = salary;
+		this.empName = empName;
+//		this.companyName = companyName;
+	}
+	
+	
+	
+}

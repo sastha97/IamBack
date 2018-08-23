@@ -1,0 +1,36 @@
+
+public class OrdersInterfaceImpl implements OrdersInterface {
+
+	@Override
+	public int insertBuyOrder(double value) {
+		
+		
+		// TODO Auto-generated method stub
+		if(buyOrders.isEmpty()) {
+			buyOrders.add(value);
+			if(sellOrders.size() > 0) {
+				if(sellOrders[0] <= value )
+					tradeExecution();
+			}
+		}
+
+	}
+
+	@Override
+	public int insertSellOrder(double value) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public int tradeExecution() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

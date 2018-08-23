@@ -1,0 +1,13 @@
+package com.pojo;
+
+import java.util.List;
+
+public class User {
+	int stocks;	
+	Double balance;
+	List<Integer> orderIds;
+	
+	
+	
+			
+}

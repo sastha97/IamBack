@@ -1,0 +1,8 @@
+package com.demo;
+
+@FunctionalInterface
+public class MyInterface1 {
+	
+	void add(int a, int b);
+
+}

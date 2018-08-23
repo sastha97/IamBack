@@ -1,0 +1,28 @@
+package com.dao;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.connections.MyConnection;
+import com.pojo.LimitOrder;
+import com.pojo.MarketOrder;
+
+public class OrderDAO {
+
+	public void addLimitOrder(LimitOrder limitorder){
+		String INSERT="insert into order values(?,?,?,?,?,?)";
+		try {
+			PreparedStatement ps = MyConnection.getMyConnection().prepareStatement(INSERT);
+			ps.setInt(1, limitorder.getUserId());
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void addMarketOrder(MarketOrder marketorder) {
+		
+	}
+}

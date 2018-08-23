@@ -1,0 +1,82 @@
+package com.pojo;
+
+import java.time.LocalTime;
+
+public class Order {
+	private int userId;
+	private int initialQuantity;
+	private int orderId;	
+	enum Status	{Rejected, Waitlisted, Confirmed, Cancelled}
+	private Status status;
+	enum Type {Buy, Sell}
+	private Type type;
+	private LocalTime timeStamp;
+	public Order() {
+		// TODO Auto-generated constructor stub
+		super();
+		this.userId = 0;
+		this.initialQuantity = 0;
+		this.orderId = 0;
+		this.status = Status.Waitlisted;
+		this.type = Type.Buy;
+		this.timeStamp = getTimeStamp();
+	}
+	public Order(int userId, int initialQuantity, int orderId, Status status, Type type, LocalTime timeStamp) {
+		super();
+		this.userId = userId;
+		this.initialQuantity = initialQuantity;
+		this.orderId = orderId;
+		this.status = status;
+		this.type = type;
+		this.timeStamp = timeStamp;
+	}
+	public int getUserId() {
+		return userId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+	public int getInitialQuantity() {
+		return initialQuantity;
+	}
+	public void setInitialQuantity(int initialQuantity) {
+		this.initialQuantity = initialQuantity;
+	}
+	public int getOrderId() {
+		return orderId;
+	}
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
+	}
+	public Status getStatus() {
+		return status;
+	}
+	public void setStatus(Status status) {
+		this.status = status;
+	}
+	public Type getType() {
+		return type;
+	}
+	public void setType(Type type) {
+		this.type = type;
+	}
+	public LocalTime getTimeStamp() {
+		return timeStamp;
+	}
+	public void setTimeStamp(LocalTime timeStamp) {
+		this.timeStamp = timeStamp;
+	}
+	@Override
+	public String toString() {
+		return "Order [userId=" + userId + ", initialQuantity=" + initialQuantity + ", orderId=" + orderId + ", status="
+				+ status + ", type=" + type + ", timeStamp=" + timeStamp + "]";
+	}
+
+
+	
+
+	
+	
+	
+
+}

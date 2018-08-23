@@ -1,0 +1,45 @@
+package com.pojo;
+
+import java.util.Scanner;
+
+public class TestEmployeeDAO {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner s = new Scanner(System.in);
+		System.out.println("Do you have someone new?");
+		String a1 = s.next();
+		if(a1.equals("Yes")) {
+			System.out.println("How Many?");
+			int n = s.nextInt();
+			for(int i = 0; i < n; i++) {
+				System.out.println("ID Pls!");
+				int e1 = s.nextInt();
+				System.out.println("What do I call you?");
+				String e3 = s.next();
+				System.out.println("What do you earn?");
+				int e2 = s.nextInt();
+				Employee myEmployee = new Employee(e1, e2, e3);
+				EmployeeDAO dao = new EmployeeDAO();
+				
+				int rows = dao.addEmployee(myEmployee);
+				
+				if(rows > 0) {
+					System.out.println("Record inserted successfully");
+				}
+				else
+					System.out.println("sorry");
+				
+
+				
+			}
+		}
+		else
+			System.out.println("GetLost");
+		
+
+
+	}
+
+}

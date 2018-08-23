@@ -1,0 +1,20 @@
+package com.pojo;
+
+import java.util.List;
+
+public class User {
+	public int userId;
+	int stocks;	
+	Double balance;
+	List<Integer> orderIds;
+	public User(int stocks, Double balance, List<Integer> orderIds) {
+		super();
+		this.stocks = stocks;
+		this.balance = balance;
+		this.orderIds = orderIds;
+	}
+	
+	
+	
+			
+}

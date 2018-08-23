@@ -1,0 +1,9 @@
+package com.exception;
+
+public class MyException extends Exception {
+	
+	public void showCause()
+	{
+		System.out.println("You got xxxx exception");
+	}
+}

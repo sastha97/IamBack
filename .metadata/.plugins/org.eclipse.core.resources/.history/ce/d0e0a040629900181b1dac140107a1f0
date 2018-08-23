@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+import com.pojo.Employee;
+
+public class EmployeeIOImpl implements EmployeeIO {
+
+	@Override
+	public Employee readEmployee() {
+		// TODO Auto-generated method stub
+		
+		Scanner s = new Scanner(System.in);
+		Employee emp = new Employee();
+		System.out.println("Salary");
+		emp.setEmpSalary(s.nextDouble());
+		emp.setAge(s.nextInt());
+		emp.setEmpId(s.nextInt());
+		emp.setName(s.next());
+		return emp;
+	}
+
+	@Override
+	public void writeEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		employee.display(12);
+
+	}
+
+}

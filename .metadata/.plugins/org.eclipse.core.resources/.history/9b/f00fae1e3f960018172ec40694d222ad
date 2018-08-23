@@ -1,0 +1,28 @@
+
+public class DemoStatic {
+	private float age;
+	private String name;
+	
+	private static int value;
+	
+	public DemoStatic() {
+		// TODO Auto-generated constructor stub
+	age = 12.12f;
+	name = "abcd";
+	value = 10;
+	}
+	static {
+		value = 0;
+	}
+	public void display() {
+		System.out.println(name+"-"+age+"-"+value);
+	}
+
+	public static void show() {
+		System.out.println(value);
+	}
+	public static void main(String[] args) {
+		DemoStatic.show();
+	}
+
+}

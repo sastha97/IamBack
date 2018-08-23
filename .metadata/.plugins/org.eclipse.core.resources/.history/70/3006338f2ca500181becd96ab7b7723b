@@ -1,0 +1,29 @@
+package com.pojo;
+
+import java.time.LocalTime;
+
+public class Trade {
+	private int tradeId;
+	private LocalTime timeStamp;
+	private int quantity;	
+	private Double price;	
+	private int sellOrderId;	
+	private int buyOrderId;
+	public Trade() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Trade(int tradeId, LocalTime timeStamp, int quantity, Double price, int sellOrderId, int buyOrderId) {
+		super();
+		this.tradeId = tradeId;
+		this.timeStamp = timeStamp;
+		this.quantity = quantity;
+		this.price = price;
+		this.sellOrderId = sellOrderId;
+		this.buyOrderId = buyOrderId;
+	}
+	
+	
+	
+	
+}

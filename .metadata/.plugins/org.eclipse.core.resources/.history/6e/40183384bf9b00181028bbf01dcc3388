@@ -1,0 +1,21 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class DemoCheckedException {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	 	try {
+			FileWriter write = new FileWriter("hello.txt");
+			write.write("ASDF");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		write.write("ASDF");
+
+	 	
+	}
+
+}

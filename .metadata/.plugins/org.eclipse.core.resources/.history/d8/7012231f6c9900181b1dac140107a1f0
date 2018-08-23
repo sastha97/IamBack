@@ -1,0 +1,16 @@
+package com.pojo;
+
+public class Calculator {
+	
+	public void sum(int a) {
+		System.out.println(a);
+	}
+	public void sum(int a, int b) {
+		sum(a+b);
+		
+	}
+	public void sum(int a, int b, int c) {
+		sum(sum(a+b)+c);
+	}
+
+}

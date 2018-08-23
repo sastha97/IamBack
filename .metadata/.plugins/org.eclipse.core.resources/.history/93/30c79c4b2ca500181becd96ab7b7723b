@@ -1,0 +1,16 @@
+package com.pojo;
+
+import java.time.LocalTime;
+
+public class Trade {
+	private int tradeId;
+	private LocalTime timeStamp;
+	private int quantity;	
+	private Double price;	
+	private int buyerId;	
+	private int sellerId;	
+	private int sellOrderId;	
+	private int buyOrderId;
+	
+	
+}

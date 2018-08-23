@@ -1,0 +1,11 @@
+import com.pojo.Employee;
+
+public class TestEmployee {
+	
+	public static void main(String[] args) {
+		Employee emp = new Employee(123,20000d);
+		emp.show();
+		
+	}
+
+}

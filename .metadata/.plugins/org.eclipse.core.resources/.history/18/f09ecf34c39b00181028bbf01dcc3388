@@ -1,0 +1,13 @@
+package com.exception;
+
+public class TestMyException {
+	public static void main(String[] args) {
+		
+		int age = 18;
+		
+		if(age < 18)
+		{
+			throw new MyException();
+		}
+	}
+}

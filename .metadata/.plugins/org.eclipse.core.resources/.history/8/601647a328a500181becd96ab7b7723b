@@ -1,0 +1,28 @@
+package com.pojo;
+
+import java.util.List;
+
+public class User {
+	public int userId;
+	private String userName;
+	int stocks;	
+	Double balance;
+	List<Integer> orderIds;
+	
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
+	public User(int userId, String userName, int stocks, Double balance) {
+		super();
+		this.userId = userId;
+		this.userName = userName;
+		this.stocks = stocks;
+		this.balance = balance;
+	}
+	
+	
+	
+	
+	
+			
+}

@@ -1,0 +1,13 @@
+package com.pojo;
+
+import java.time.LocalTime;
+
+public class Order {
+	User userId;
+	int initialQuantity;
+	String orderId;	
+	enum status	{Rejected, Waitlisted, Confirmed, Cancelled}
+	enum type {Buy, Sell}
+	LocalTime timeStamp;
+
+}

@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
+
+public interface OrdersInterface {
+	List<double> buyOrders = new ArrayList();
+	List<double> sellOrders = new ArrayList();
+	public void insertBuyOrder(double value) ;
+	public void insertSellOrder(double value) ;
+	public void tradeExecution();
+	
+	
+	
+
+}

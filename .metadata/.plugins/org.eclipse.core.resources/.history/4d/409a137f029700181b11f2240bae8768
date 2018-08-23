@@ -1,0 +1,13 @@
+package com.one;
+
+public class MyClass {
+
+	default void display()
+	{
+		System.out.println("Displaying MyCLass");
+	}
+	public void useDisplay() {
+		display();
+	}
+
+}

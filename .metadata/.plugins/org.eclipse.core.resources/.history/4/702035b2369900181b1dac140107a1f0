@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+import com.pojo.Employee;
+
+public class TestEmployee1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		double empSalary = s.nextDouble();
+		int empId = s.nextInt();
+		int age = s.nextInt();
+		String name = s.next();
+		Employee emp = new Employee(empSalary, empId, age, name);
+		emp.show();
+
+	}
+
+}

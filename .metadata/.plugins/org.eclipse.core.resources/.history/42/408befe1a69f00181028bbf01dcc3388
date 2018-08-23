@@ -1,0 +1,48 @@
+package com.dao;
+
+import java.util.Scanner;
+
+import com.beans.Book;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		BookDAOImpl b = new BookDAOImpl();
+		
+		System.out.println("Select the function you want to perform");
+		System.out.println("1.Add Book");
+		System.out.println("2.Update Book");
+		System.out.println("3.Display all Books");
+		System.out.println("4.Find books by name");
+		System.out.println("5.Find books by author");
+		System.out.println("6.Find book by ISBN");
+		
+		Scanner s = new Scanner(System.in);
+		
+		int i = s.nextInt();
+		
+		switch (i) {
+		case 1:
+			System.out.println("Name pls!");
+			String name = s.next();
+			System.out.println("Author!");
+			String author = s.next();
+			System.out.println("Publisher pls!");
+			String publication = s.next();	
+			System.out.println("ID pls!");
+			String isbn = s.next();
+			if(b.addBook(new Book(isbn, name, author, publication)))
+				System.out.println("Roger that");
+			else
+				System.out.println("Mission failed");
+			break;
+
+		default:
+			break;
+		}
+
+	}
+
+}

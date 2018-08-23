@@ -1,0 +1,94 @@
+package com.pojo;
+
+import java.time.LocalTime;
+
+public class LimitOrder extends Order implements OrderInterface {
+	private int remainingQuantity;
+	private Double price;			
+	private Boolean allOrNone;
+	
+				
+
+	public LimitOrder() {
+		// TODO Auto-generated constructor stub
+	}	
+	public LimitOrder(User userId, int initialQuantity, int orderId, Status status, Type type, LocalTime timeStamp, int remainingQuantity, Double price, Boolean allOrNone) {
+		super(userId, initialQuantity, orderId, status, type, timeStamp);
+		this.remainingQuantity = remainingQuantity;
+		this.price = price;
+		this.allOrNone = allOrNone;
+	}
+
+	@Override
+	public void editOrder(int quantity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void cancelOrder() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void insertIntoQueue() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteIntoQueue() {
+		// TODO Auto-generated method stub
+
+	}
+	public int getRemainingQuantity() {
+		return remainingQuantity;
+	}
+	public void setRemainingQuantity(int remainingQuantity) {
+		this.remainingQuantity = remainingQuantity;
+	}
+	public Double getPrice() {
+		return price;
+	}
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+	public Boolean getAllOrNone() {
+		return allOrNone;
+	}
+	public void setAllOrNone(Boolean allOrNone) {
+		this.allOrNone = allOrNone;
+	}
+	@Override
+	public String toString() {
+		return "LimitOrder [remainingQuantity=" + remainingQuantity + ", price=" + price + ", allOrNone=" + allOrNone
+				+ "]";
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		LimitOrder other = (LimitOrder) obj;
+		if (allOrNone == null) {
+			if (other.allOrNone != null)
+				return false;
+		} else if (!allOrNone.equals(other.allOrNone))
+			return false;
+		if (price == null) {
+			if (other.price != null)
+				return false;
+		} else if (!price.equals(other.price))
+			return false;
+		if (remainingQuantity != other.remainingQuantity)
+			return false;
+		return true;
+	}
+	
+
+}

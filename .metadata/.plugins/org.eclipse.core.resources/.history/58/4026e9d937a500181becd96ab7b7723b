@@ -1,0 +1,15 @@
+package com.dao;
+
+import com.pojo.LimitOrder;
+import com.pojo.MarketOrder;
+
+public class OrderDAO {
+
+	public void addLimitOrder(LimitOrder limitorder){
+		
+	}
+	
+	public void addMarketOrder(MarketOrder marketorder) {
+		
+	}
+}

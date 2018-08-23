@@ -1,0 +1,13 @@
+
+public class Thread1 {
+	private int data;
+	
+	
+	
+	private void run() {
+		// TODO Auto-generated method stub
+		System.out.println("Thread No:"+data);
+
+	}
+	
+}

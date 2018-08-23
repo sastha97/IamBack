@@ -1,0 +1,94 @@
+
+public class OrdersInterfaceImpl implements OrdersInterface {
+
+	@Override
+	public int insertBuyOrder(double value) {
+		int r = 0;
+		
+		// TODO Auto-generated method stub
+		if(buyOrders.isEmpty()) {
+			buyOrders.add(value);
+			if(sellOrders.size() > 0) {
+				if(sellOrders.get(0) <= value )
+					{
+					r = tradeExecution();
+					return r;
+					}
+			}
+		}
+		int i = 0;
+		while(value < buyOrders.get(i)) {
+			i++;
+		}
+		buyOrders.add(i, value);
+		if(i==0) {
+			r = tradeExecution();
+		}
+		return r;
+
+	}
+
+	@Override
+	public int insertSellOrder(double value) {
+		// TODO Auto-generated method stub
+		int r = 0;
+		
+		if(sellOrders.isEmpty()) {
+			sellOrders.add(value);
+			if(buyOrders.size() > 0) {
+				if(buyOrders.get(0) >= value )
+					{
+					r = tradeExecution();
+					return r;
+					}
+			}
+		}
+		int i = 0;
+		while(value > buyOrders.get(i)) {
+			i++;
+		}
+		sellOrders.add(i, value);
+		if(i==0) {
+			r = tradeExecution();
+		}
+		return r;
+
+	}
+
+	
+
+	@Override
+	public int tradeExecution() {
+		// TODO Auto-generated method stub
+		int r = 0;
+		double bestBuy = buyOrders.get(0);
+		double bestSell = sellOrders.get(0);
+		
+		while(bestBuy >= bestSell) {
+			buyOrders.remove(0);
+			sellOrders.remove(0);
+			if(buyOrders.size() == 0|| sellOrders.size() == 0) break; 
+			bestBuy = buyOrders.get(0);
+			bestSell = sellOrders.get(0);
+			r++;	
+			System.out.println("Trade Executed");
+		}
+		
+		
+		
+		return r = 0;
+				
+				
+				
+		
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+
+}

@@ -1,0 +1,14 @@
+
+public class DemoPriority {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Thread t1 = new MyThread();
+		t1.setName("High");
+		t1.setPriority(Thread.MAX_PRIORITY);
+		t1.start();
+		System.out.println("Main Completed:" + Thread.currentThread().getName());
+				
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.pojo;
+
+import java.util.Scanner;
+
+public class StudentFileIOImpl implements StudentFileIO, StudentIO {
+	public Student[] readUser() {
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		Student[] students= new Student[n];
+		for(Student student: students) {
+			System.out.println("Name");
+			student.setName(s.next());
+			System.out.println("RollNo");
+			student.setRollNo(s.nextInt());
+			System.out.println("Total");
+			student.setTotal(s.nextInt());
+		}
+		return students;
+	}
+	public int write(Student[] students){
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}

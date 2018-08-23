@@ -1,0 +1,30 @@
+class DemoThread extends Thread
+{
+	
+		public void run() {
+			
+					// TODO Auto-generated method stub
+			
+					System.out.println("Thread name:-"+Thread.currentThread().getName());
+					
+		}
+		
+			
+		
+			public static void main(String[] args) {
+				
+						Thread thread=new DemoThread();
+						
+								thread.setName(("myThread"));
+								
+										thread.run();
+										
+												thread.start();
+												
+			}
+			
+				
+			
+
+		}
+}
